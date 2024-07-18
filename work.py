@@ -62,3 +62,9 @@ Example: 25/12/2000
             continue
 
         return day, month, year, curYear
+bDay, bMonth, bYear, curYear = input_bdate()
+
+while (curYear - bYear) >= 0:
+    age, dayName = getBirthdays(curYear, bYear, bMonth, bDay)
+    print(f"Age: {age} - {dayName}")
+    curYear -=1
